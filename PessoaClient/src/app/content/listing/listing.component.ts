@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingComponent implements OnInit {
 
+  listItems: string[] = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
   constructor() { }
 
   ngOnInit() {
