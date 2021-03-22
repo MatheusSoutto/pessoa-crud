@@ -12,12 +12,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { ListingComponent } from './content/listing/listing.component';
+import { RegistrationComponent } from './content/registration/registration.component';
+import { MissionComponent } from './content/mission/mission.component';
+import { ContactComponent } from './content/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    ListingComponent
+    ListingComponent,
+    RegistrationComponent,
+    MissionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
