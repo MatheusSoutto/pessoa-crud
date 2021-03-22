@@ -1,1 +1,40 @@
-<p>registration works!</p>
+<div>
+  <h1>
+    Cadastro de Usuário
+  </h1>
+  <br />
+  <form [formGroup]="pessoaForm">
+    <p>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Nome</mat-label>
+        <input matInput formControllName="nome" name="nome" placeholder="João da Silva" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Idade</mat-label>
+        <input matInput formControllName="idade" name="idade" type="number" required>
+        <mat-error *ngIf="pessoaForm.controls.idade.invalid">{{getErrorMessageIdade()}}</mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Sexo</mat-label>
+        <mat-select formControlName="sexo" required>
+          <mat-option *ngFor="let sexo of sexoList" [value]="sexo">{{ sexo }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Peso</mat-label>
+        <input matInput formControllName="peso" name="peso" type="number" class="right-align" required>
+        <span matSuffix> Kg</span>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Altura</mat-label>
+        <input matInput formControllName="altura" name="altura" type="number" class="right-align">
+        <span matSuffix> m</span>
+      </mat-form-field>
+    </p>
+    <button mat-raised-button type="submit" color="primary">Submit</button>
+  </form>
+</div>

@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListingComponent } from './content/listing/listing.component';
 import { RegistrationComponent } from './content/registration/registration.component';
@@ -42,6 +43,7 @@ import { ContactComponent } from './content/contact/contact.component';
     MatDividerModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
     FormsModule,
     ReactiveFormsModule
   ],
