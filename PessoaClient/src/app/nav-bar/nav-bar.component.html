@@ -4,19 +4,19 @@
       [mode]="'side'"
       [opened]="true">
     <mat-nav-list>
-      <a mat-list-item *ngFor="let item of menu" class="list-item" href="#">{{ item }}</a>
+      <a mat-list-item *ngFor="let item of menu" (click)="changeContent(item)" class="list-item">{{ item }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar class="toolbar" color="primary">
       <mat-nav-list class="list-horizontal">
-        <a mat-list-item *ngFor="let item of menu" class="list-item" href="#">{{ item }}</a>
+        <a mat-list-item *ngFor="let item of menu" (click)="changeContent(item)" class="list-item">{{ item }}</a>
       </mat-nav-list>      
     </mat-toolbar>
     <!-- Add Content Here -->
-    <app-listing></app-listing>
-    <app-registration></app-registration>
-    <app-mission></app-mission>
-    <app-contact></app-contact>
+    <app-listing *ngIf="current == 'Lista'"></app-listing>
+    <app-registration *ngIf="current == 'Cadastro'"></app-registration>
+    <app-mission *ngIf="current == 'Missão'"></app-mission>
+    <app-contact *ngIf="current == 'Fale conosco'"></app-contact>
   </mat-sidenav-content>
 </mat-sidenav-container>
