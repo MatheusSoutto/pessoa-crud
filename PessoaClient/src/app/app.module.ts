@@ -12,6 +12,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListingComponent } from './content/listing/listing.component';
 import { RegistrationComponent } from './content/registration/registration.component';
 import { MissionComponent } from './content/mission/mission.component';
@@ -36,7 +39,11 @@ import { ContactComponent } from './content/contact/contact.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

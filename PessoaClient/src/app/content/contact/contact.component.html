@@ -1,1 +1,20 @@
-<p>contact works!</p>
+<div>
+  <h1>
+    Fale Conosco
+  </h1>
+  <br />
+  <form [formGroup]="contactForm">
+    <p>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControllName="email" name="email" placeholder="example@example.com" required>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Mensagem</mat-label>
+        <textarea matInput formControllName="mensagem" name="mensagem" required></textarea>
+      </mat-form-field>
+    </p>
+  </form>
+</div>
