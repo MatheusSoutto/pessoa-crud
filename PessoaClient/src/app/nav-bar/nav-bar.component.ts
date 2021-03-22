@@ -16,8 +16,13 @@ export class NavBarComponent {
       shareReplay()
     );
 
-  menu: string[] = ['Lista', 'Cadastro', 'Institucional', 'Fale conosco'];
+  menu: string[] = ['Lista', 'Cadastro', 'Missão', 'Fale conosco'];
+  current: string = 'Lista';
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  changeContent(content: string) {
+    this.current = content;
+  }
 
 }
