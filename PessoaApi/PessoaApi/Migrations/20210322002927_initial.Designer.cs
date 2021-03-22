@@ -10,7 +10,7 @@ using PessoaApi.Context;
 namespace PessoaApi.Migrations
 {
     [DbContext(typeof(PessoaContext))]
-    [Migration("20210321232241_initial")]
+    [Migration("20210322002927_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
